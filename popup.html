@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Random User-Agent</title>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <style>
+      body {
+        width: 500px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      textarea {
+        font-size: 14px;
+        width: 90%;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-group">
+        <label for="user-agent-input"
+          >Enter User-Agent strings (one per line):</label
+        >
+        <textarea
+          id="user-agent-input"
+          class="form-control"
+          placeholder="Mozilla/5.0 (Windows NT 10.0; Win64; x64) ..."
+        ></textarea>
+      </div>
+
+      <div class="form-group mt-4">
+        <label for="user-agent-show"
+          >Your User-agent is:</label
+        >
+        <textarea
+          id="user-agent-show"
+          class="form-control"
+          placeholder="Mozilla/5.0 (Windows NT 10.0; Win64; x64) ..."
+        ></textarea>
+      </div>
+
+      <div class="btn-group-vertical my-4 d-flex justify-content-center">
+        <button id="add-user-agent" class="btn btn-primary my-1">
+          Add User-Agent
+        </button>
+        <button id="change-user-agent" class="btn btn-primary my-1">
+          Change User-Agent
+        </button>
+        <button id="use-default-user-agent" class="btn btn-primary my-1">
+          Use Default User-Agent
+        </button>
+      </div>
+    </div>
+
+    <!--   
+  <textarea id="user-agent-input" placeholder="Enter User-Agent strings, one per line" class="form-control"></textarea>
+  <button id="add-user-agent" class="btn btn-primary">Add User-Agent</button><br>
+  <button id="change-user-agent" class="btn btn-primary">Change User-Agent</button><br>
+  <button id="use-default-user-agent" class="btn btn-primary">Use Default User-Agent</button> <br> -->
+    <script src="popup.js"></script>
+  </body>
+</html>
